@@ -1,0 +1,4 @@
+function dxdt = Eje9_7(t,x,u1,u2)
+    
+    dxdt = x + x^3 + u; 
+end
