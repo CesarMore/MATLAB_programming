@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/07/22||00:22:56" using="Simscape Multibody Link Version 7.4" from="SolidWorks 28.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Robot 2GDL" uid="Robot 2GDL" version="113">
+<AssemblyFile name="Robot 2GDL.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Hombro-1" uid="Hombro-1" grounded="true" entityUid="Hombro*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.054683828485883448 0.078347054400481481 0.1157808245463491</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon-2" uid="Eslabon-2" entityUid="Eslabon*:*Default">
+<Transform>
+<Rotation>-0.28344553402535333 -0.95898833634256597 0 0.95898833634256597 -0.28344553402535333 0 0 0 1</Rotation>
+<Translation>0.22089743551790475 0.45314438208226354 0.15578082454634909</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon-1" uid="Eslabon-1" entityUid="Eslabon*:*Default">
+<Transform>
+<Rotation>-0.9141398236141024 -0.40539904154151374 0 0.40539904154151374 -0.9141398236141024 0 0 0 0.99999999999999989</Rotation>
+<Translation>0.054683828485884135 0.078347054400481564 0.1357808245463491</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Hombro-1</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabon-1</Uid>
+</InstancePath>
+<Position>0 -0.41000000000000009 0</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Hombro-1</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eslabon-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabon-1</Uid>
+</InstancePath>
+<Position>0 -0.41000000000000009 0.01999999999999999</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabon-2</Uid>
+</InstancePath>
+<Position>0 -0.41000000000000003 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eslabon-1</Uid>
+</InstancePath>
+<Position>0 -0.41000000000000009 0</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eslabon-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Eslabon" uid="Eslabon*:*Default" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Eslabon.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.55626880927785149</Mass>
+<CenterOfMass>0 -0.13157552469897724 0.0097758602381442031</CenterOfMass>
+<Inertia>0.0120453817631573 0.0004902602588037773 0.012499261280529637 1.6405094102152794e-05 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Hombro" uid="Hombro*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Hombro.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.43586283305884588</Mass>
+<CenterOfMass>0 0 0.01</CenterOfMass>
+<Inertia>0.00085748354546152147 0.00085748354546152147 0.0016859095687191197 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Hombro_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
